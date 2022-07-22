@@ -1,0 +1,310 @@
+*{margin: 0;padding: 0;}
+:root{}
+body{}
+
+/**** float- left use for float left****/
+.float-left{
+    float: left;
+}
+
+/**** float- righ use for float right****/
+.float-right{
+    float: right;
+}
+
+/***** fix div for  overflow*****/
+.fix{
+    overflow: hidden;
+}
+
+/* wrapper div for 100% width*/
+.wrapper{
+    width:100%;
+}
+
+/* wrap div for 1120 px width*/
+.wrap{
+    width:1120px;
+    display: block;
+    margin: 0 auto;
+}
+
+/****header
+===================================*/
+header{
+    background-color: #F4F4F4;
+    padding-bottom: 50px;
+    border-bottom: 2px solid;
+}
+header > .header-logo{
+    text-align: end;
+}
+
+/**** header-left******/
+.header-left{
+    margin-right: 254px;
+}
+.header-left > a{}
+.header-left > a > img{}
+
+/**** header-right******/
+.header-right{
+    margin-top: 15px;
+}
+.header-right > nav{}
+.header-right > nav > ul{}
+.header-right > nav > ul > li{
+    list-style: none;
+    float: left;
+    margin-left: 45px;
+}
+.header-right > nav > ul > li > a{
+    text-decoration: none;
+    padding: 20px 0 20px 20px;
+    color: #FE9901;
+    display: block;
+}
+.header-right > nav > ul > li > a:hover{
+    color:#000000
+}
+
+/****section 1
+===================================*/
+.section-1{
+    background-image: url(imgs/slider-bd.png);
+    width: 1120px;
+    height: 473px;
+    position: relative;
+    cursor: pointer;
+}
+.section-1 > img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 75px;
+
+    transition:all 1s ;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+.section-1:hover.section-1 > img{
+    opacity:0
+}
+.section-1 > h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    width: 520px;
+    padding: 20px;
+    color:#FFFFFF;
+    margin-top: 0px;
+}
+.section-1 > a{
+    text-decoration: none;
+    color: #F17600;
+    padding: 11px 10px 10px 120px;
+    background-color: #000;
+    margin-left: 198px;
+    position: relative;
+    top: 11px;
+    left: 25px;
+}
+.section-1::before{
+    content: url(imgs/header-imgl.png);
+    left: -2000px;
+    position:absolute;
+    top: 110px;
+
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+.section-1:hover::before{
+    left: 645px;
+}
+
+.section-1::after{
+    content: "HERE SOME NICE WORK";
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    left:2000px;
+    bottom: 50px;
+
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.section-1:hover::after{
+    left: 20px;
+}
+
+/****section 2
+===================================*/
+.section-2{
+    margin-top: 25px;
+    padding: 30px 0 40px 0;
+    border-top: 1px solid;
+}
+/******section-2-left*********/
+.section-2-left{
+    width:350px;
+    margin-right: 35px;
+}
+.section-2-left > h2{
+    margin: 10px 10px 10px 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.section-2-left > p{
+    border-top: 5px solid black;
+    padding: 15px 0;
+}
+.section-2-left > a{
+    text-decoration: none;
+    color:#FE9B00;
+}
+
+/***** section-2-middel******/
+.section-2-middel{
+    width:350px;
+    margin-right: 35px;
+}
+.section-2-middel > h2{
+    margin: 10px 10px 10px 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.section-2-text{
+    border-top: 5px solid black;
+    padding: 15px 0;
+}
+.section-2-text > input{
+    float: left
+}
+.section-2-text > p{
+    margin-left: 25px;
+}
+
+/***** section-2-right******/
+.section-2-right{
+    width:350px;
+}
+.section-2-right > h2{
+    margin: 10px 10px 10px 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.section-2-right > p{
+    border-top: 5px solid black;
+    padding: 15px 0;
+}
+.section-2-right > span{
+}
+
+/****section 3
+===================================*/
+.section-3{}
+.section-3 > h2{
+    padding-bottom: 30px;
+}
+
+.section-3 > ul{}
+.section-3 > ul > li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+.section-3 > ul > li:last-child{
+    margin-right: 0;
+}
+
+.section-3 > ul > li > a{}
+.section-3 > ul > li > a > img{
+    width:265px;
+}
+
+.section-3 > a > img{
+    width: 257px;
+    margin-right: 20px
+}
+.marign{
+    margin-left: 0;
+}
+
+/****section 4
+===================================*/
+.section-4{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.section-4-left{
+    width:730px;
+    margin-right: 30px;
+}
+.section-4-left > h2{
+    padding-bottom: 20px;
+}
+
+.section-4-right{
+    width:300px;
+}
+.section-4-right > ul{
+   padding-top: 20px;
+}
+.section-4-right > ul > li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+.section-4-right > ul > li > a{}
+.section-4-right > ul > li > a > img{}
+
+/****footer
+===================================*/
+footer{
+    background-color: #E2E2E2;
+    padding-bottom: 50px;
+}
+.footer-wrap{
+    width:1120px;
+    margin: 0 auto;
+    display: block;
+}
+.footer-left{
+    width:800px;
+    padding-top: 30px;
+}
+.footer-left > ul {
+    margin-bottom: 15px;
+}
+.footer-left > ul > li{
+    border-left: 1px solid #000000;
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+    padding-left:10px
+}
+.footer-left > ul > li:first-child{
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+.footer-left > ul > li > a{
+    text-decoration: none;
+    color:black;
+}
+.footer-right{
+    padding-top: 30px;
+}
+.footer-right > a > img{
+    margin-top: -10px;
+}
